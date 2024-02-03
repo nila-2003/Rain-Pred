@@ -22,27 +22,26 @@ Ex-  data= data.replace(‘T’,0.0)
 To save the data is a csv file- data.to_csv(‘filename.csv’)
 The above code is for data cleaning. Now this data can be used. Linear approach to forming a relationship between a variable and many independent variables. Minimize errors. 
 Import sklearn as sk
-From sklearn.linear_model import LinearRegression
-#read the cleaned data:
-Data=pd.read_csv()
-# the features or the 'x' values of the data
-# these columns are used to train the model
-# the last column, i.e, precipitation column
-# will serve as the label
-X=data.drop([‘’],axis=1)
-Y= data[‘’]
-#reshaping it into a 2d vector
-Y=y.values.reshape(-1,1)
-# consider a random day in the dataset
-# we shall plot a graph and observe this
-# day
-Day_index=798
-Days=[I for I in range(y.size)]
-Clf=LinearRegression() – initialize the linear regression classifier
-Train- clf.fit(x,y)
-# give a sample input to test our model
-# this is a 2-D vector that contains values
-# for each column in the dataset.
+From sklearn.linear_model import LinearRegression<br>
+Read the cleaned data:
+Data=pd.read_csv()<br>
+ the features or the 'x' values of the data<br>
+These columns are used to train the model<br>
+The last column, i.e, precipitation column<br>
+Will serve as the label<br>
+X=data.drop([‘’],axis=1)<br>
+Y= data[‘’]<br>
+Reshaping it into a 2d vector<br>
+Y=y.values.reshape(-1,1)<br>
+consider a random day in the dataset<br>
+we shall plot a graph and observe this day<br>
+Day_index=798<br>
+Days=[I for I in range(y.size)]<br>
+Clf=LinearRegression() – initialize the linear regression classifier<br>
+Train- clf.fit(x,y)<br>
+Give a sample input to test our model<br>
+This is a 2-D vector that contains values<br>
+For each column in the dataset.<br>
 inp = np.array([[74], [60], [45], [67], [49], [43], [33], [45],
                 [57], [29.68], [10], [7], [2], [0], [20], [4], [31]])
 inp = inp.reshape(1, -1)
